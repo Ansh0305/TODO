@@ -29,7 +29,7 @@ export default function TodoList() {
       });
     });
   };
-  
+
   return (
     <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
       {todos.map((todo) => (
@@ -38,6 +38,7 @@ export default function TodoList() {
           key={todo.id}
           remove={removeTodo}
           toggle={() => toggleTodo(todo.id)}
+          
         />
       ))}
     </List>
